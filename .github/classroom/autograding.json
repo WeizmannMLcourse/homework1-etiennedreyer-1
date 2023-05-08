@@ -2,8 +2,8 @@
   "tests": [
     {
       "name": "test",
-      "setup": "pip install torch h5py; wget https://www.dropbox.com/s/9pk2j0j8z5jxitf/galaxy_test.h5",
-      "run": "python evaluate.py preprocessed/galaxy_test.h5",
+      "setup": "pip install torch h5py; wget -q https://www.dropbox.com/s/9pk2j0j8z5jxitf/galaxy_test.h5",
+      "run": "python evaluate.py galaxy_test.h5",
       "input": "",
       "output": "[6-9][0-9]",
       "comparison": "regex",
